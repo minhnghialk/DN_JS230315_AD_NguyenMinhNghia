@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Board</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h2 {
+        margin-top: 20px;
+      }
+
+      input {
+        padding: 5px;
+        width: 200px;
+        outline: none;
+      }
+
+      button {
+        padding: 5px 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+      }
+
+      li span {
+        margin: 0 10px;
+      }
+
+      li button {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      li span:last-child {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h2>Add New Player</h2>
+    <input type="text" id="input" placeholder="Enter a player's name" />
+    <button onclick="addPlayer()">ADD PLAYER</button>
+    <h2>Score Board</h2>
+    <p id="players_count">Players:</p>
+    <p id="total_points">Total Points:</p>
+    <ul id="render_players">
+      <!-- <li>
+        <span> <button>x</button> </span>
+        <span><i class="fa-regular fa-star"></i></span>
+        A1
+        <span> <button>-</button> </span>
+        <span> 0 </span>
+        <span> <button>+</button> </span>
+      </li>
+
+      <li>
+        <span> <button>x</button> </span>
+        <span><i class="fa-regular fa-star"></i></span>
+        B2
+        <span> <button>-</button> </span>
+        <span> 0 </span>
+        <span> <button>+</button> </span>
+      </li>
+
+      <li>
+        <span> <button>x</button> </span>
+        <span><i class="fa-regular fa-star"></i></span>
+        C3
+        <span> <button>-</button> </span>
+        <span> 0 </span>
+        <span> <button>+</button> </span>
+      </li> -->
+    </ul>
+    <script src="./main.js"></script>
+  </body>
+</html>
